@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".bai2">
+    <TextView
+        android:layout_margin="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đổi năm dương lịch sang âm lịch"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nhập năm dương lịch"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+    <EditText
+        android:id="@+id/input_year"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@color/DarkKhaki"/>
+    <Button
+        android:id="@+id/buttonProcess"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Thực hiện"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="2012 là năm Nhâm Thìn"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+</LinearLayout>

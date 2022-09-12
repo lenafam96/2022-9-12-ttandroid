@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bai4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/checkPerfectNumber"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Bài toán kiểm tra số hoàn hảo"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/checkPrimeNumber"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Bài toán kiểm tra nguyên tố"/>
+            <RadioButton
+                android:id="@+id/solveEquation2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Giải phương trình bậc nhất"/>
+            <RadioButton
+                android:id="@+id/solveEquation3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Giải phương trình bậc 2"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_input_b4_a"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập hệ số a"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/input_b4_a"
+            android:visibility="visible"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:textSize="17sp"
+            android:background="@color/DarkKhaki"/>
+        <TextView
+            android:id="@+id/text_input_b4_b"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập hệ số b"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/input_b4_b"
+            android:visibility="invisible"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:textSize="17sp"
+            android:background="@color/DarkKhaki"/>
+        <TextView
+            android:id="@+id/text_input_b4_c"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập hệ số c"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/input_b4_c"
+            android:visibility="invisible"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:textSize="17sp"
+            android:background="@color/DarkKhaki"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_marginRight="20dp"
+            android:id="@+id/buttonAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thực hiện"
+            android:backgroundTint="@android:color/holo_red_light"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/resultTextB4"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phương trình có nghiệm x = 2"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+    </LinearLayout>
+</LinearLayout>
